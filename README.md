@@ -1,8 +1,6 @@
 # Bankscrap::Sabadell
 
-[Bankscrap](https://github.com/bankscrap/bankscrap) adapter for Sabadell.
-
-Bankscrap adapter for Banc Sabadell (Banco Sabadell): business and individual accounts.
+[Bankscrap](https://github.com/bankscrap/bankscrap) adapter for Banc Sabadell (Banco Sabadell): business and individual accounts.
 
 
 ## Installation
