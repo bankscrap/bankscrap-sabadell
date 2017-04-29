@@ -25,11 +25,11 @@ module Bankscrap
           # 3 CAL -> not supported
           # 4 Secondary card -> not supported
 
-          @login_type = case credentials[:login_type].to_sym
+          @login_type = case @login_type.to_sym
             when :individual then 1
             when :business then 2
             else
-              raise InvalidLoginType, "Invalid login_type: '#{credentials[:login_type]}'"
+              raise InvalidLoginType, "Invalid login_type: '#{@login_type}'"
           end
 
           add_headers('User-Agent' => 'ANDROID 6.0 Google+Nexus+6P+-+6.0.0+-+API+23+-+1440x2560 NATIVE_APP 17.2.0 STANDARD')
