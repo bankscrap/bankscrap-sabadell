@@ -2,7 +2,7 @@
 
 [Bankscrap](https://github.com/bankscrap/bankscrap) adapter for Sabadell.
 
-**TODO**: write a proper description for your adapter.
+Bankscrap adapter for Banc Sabadell (Banco Sabadell): business and individual accounts.
 
 
 ## Installation
@@ -26,12 +26,12 @@ Or install it yourself as:
 ### From terminal
 #### Bank account balance
 
-    $ bankscrap balance Sabadell --credentials=user:YOUR_USER --password:YOUR_PASSWORD --login_type:business
+    $ bankscrap balance Sabadell --credentials=user:YOUR_USER --password:YOUR_PASSWORD --login_type:business|individual
 
 
 #### Transactions
 
-    $ bankscrap transactions Sabadell --credentials=user:YOUR_USER --password:YOUR_PASSWORD --login_type:business
+    $ bankscrap transactions Sabadell --credentials=user:YOUR_USER --password:YOUR_PASSWORD --login_type:business|individual
 
 ---
 
@@ -41,7 +41,7 @@ For more details on usage instructions please read [Bankscrap readme](https://gi
 
 ```ruby
 require 'bankscrap-sabadell'
-sabadell = Bankscrap::Sabadell::Bank.new(user: YOUR_USER, password: YOUR_PASSWORD, login_type: :business)
+sabadell = Bankscrap::Sabadell::Bank.new(user: YOUR_USER, password: YOUR_PASSWORD, login_type: :business) # or :individual
 ```
 
 
