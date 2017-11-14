@@ -34,6 +34,7 @@ module Bankscrap
 
           add_headers('User-Agent' => 'ANDROID 6.0 Google+Nexus+6P+-+6.0.0+-+API+23+-+1440x2560 NATIVE_APP 17.2.0 STANDARD')
           add_headers('Accept' => 'application/vnd.idk.bsmobil-v1720+json')
+          add_headers('Accept-Language' => 'es')
           add_headers('Content-Type' => 'application/json; charset=utf-8')
         end
       end
@@ -127,6 +128,7 @@ module Bankscrap
           id: data['apuntNumber'],
           amount: amount,
           description: data['concept'],
+          description_detail: data['conceptDetail'],
           effective_date: parse_date(data['valueDate']),
           operation_date: parse_date(data['date']),
           balance: balance
