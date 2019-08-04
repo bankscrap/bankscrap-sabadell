@@ -2,6 +2,7 @@
 
 [Bankscrap](https://github.com/bankscrap/bankscrap) adapter for Banc Sabadell (Banco Sabadell): business and individual accounts.
 
+Contact: open an issue or email us at bankscrap@protonmail.com.
 
 ## Installation
 
